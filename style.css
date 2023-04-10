@@ -1,6 +1,8 @@
 body{
-    background-image: url(https://www.hdwallpapers.in/download/arsenal_stadium_hd_arsenal-HD.jpg);
+    background-image: url(./assets/arsenal.jpg);
     text-align:center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   form{
     background-color: rgba(128, 128, 128, 0.3);;
