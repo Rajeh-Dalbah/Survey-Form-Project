@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1 id="title">Survey form for Arsenal Football Club</h1>
+    <p id="description">Thank you for taking the time to participate in this survey.
+    <p>
+    <form id="survey-form">
+        <div class="input-element">
+            <label id="name-label">
+                Name
+            </label>
+            <input placeholder="name" id="name" type="text" class="input-element" required />
+
+        </div>
+        <div class="input-element">
+            <label id="email-label">
+                Email
+                <input placeholder="your@email.com" id="email" type="email" class="input-element" required />
+            </label>
+        </div>
+        <div class="input-element">
+            <label id="age-label">
+                Age
+                <input placeholder="age" min="6" max="120" id="age" type="number" class="input-element" required />
+            </label>
+        </div>
+
+
+        <div>
+            <label id="selectLabel">
+                Your favorite competition :
+                <select id="dropdown">
+                    <option>Premier League</option>
+                    <option>FA Cup</option>
+                    <option>Carbao Cup</option>
+                    <option>UEFA Champions League</option>
+                    <option>Europe League</option>
+                </select>
+            </label>
+        </div>
+        <div class="selectLabel">
+            <label class="selectLabel">Are you satisfied with the team's performance?</label>
+            <br>
+            <input type="radio" name="team" class="radio" value="sure"/><label> Sure </label> <br>
+
+            <input type="radio" name="team" class="radio" value="maybe"><label>Maybe </label><br>
+
+            <input type="radio" name="team" class="radio" value="notSure" /><label>Not sure </label>
+        </div>
+
+        <div class="selectLabel">
+            <label class="selectLabel">Which your favorite players this season? </label><br>
+            <label>
+                <input type="checkbox" name="player" value="sake" />Saka </label><br>
+            <label>
+                <input type="checkbox" name="player" value="Odegaard" />Odegaard </label><br>
+            <label>
+                <input type="checkbox" name="player" value="Saliba" /> Saliba</label><br>
+            <label>
+                <input type="checkbox" name="player" value="Martinelli" />Martinelli </label><br>
+            <label>
+                <input type="checkbox" name="player" value="Xhaka" />Xhaka </label><br>
+            <label>
+                <input type="checkbox" name="player" value="Zinshenko" /> Zinshenko</label><br>
+        </div>
+        <div class="input-element">
+            <label>What do you want from the team in the future?</label>
+            <textarea type="text" class="textarea"></textarea>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+</body>
+
+</html>
